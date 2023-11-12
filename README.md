@@ -9,7 +9,13 @@ Hi! This is **SO AI**! An open source IDE plugins for Jetbrains IDEs, including 
 - [ ] IDE integration
 - [ ] Local database of previous chats
 - [ ] User authorization window.
-- [ ] Conversations window
+- [x] Conversations window
+- [ ] Locally cached conversations
+
+## Chat Window
+<p>
+    <img src="media/chatWindow.png">
+</p>
 
 ## Install
 The plugin is still at a very early stage of development, however, once ready-to-install builds are produced, it'll be present at the [releases section](https://github.com/KDiaryApp/Stackoveflow-AI/releases)

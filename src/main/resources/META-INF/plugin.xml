@@ -34,4 +34,9 @@
             <keyboard-shortcut keymap="$default" first-keystroke="alt S"/>
         </action>
     </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow factoryClass="com.polendina.soai.presentation.toolWindow.ChatToolWindowFactory" id="SO Chat Window"/>
+    </extensions>
+
 </idea-plugin>

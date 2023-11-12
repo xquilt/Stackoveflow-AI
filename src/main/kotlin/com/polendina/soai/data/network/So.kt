@@ -1,5 +1,6 @@
 package com.polendina.soai.data.network
 
+import com.polendina.soai.models.Answer
 import com.polendina.soai.utils.parseFKey
 import java.util.*
 
@@ -19,15 +20,13 @@ class So {
         println("Authenticating user!!!")
     }
 
-    fun askQuestion(question: String) {
+    fun askQuestion(question: String): Answer? {
         if (fkey.isEmpty()) authenticateUser(email = email, password = password)
-        retrofit.askQuestion(
+        return retrofit.askQuestion(
             fkey = fkey,
             content = question,
             correlationId = UUID.randomUUID().toString(),
-        ).execute().let {
-            println(it.body())
-        }
+        ).execute().body()
     }
 
 }

@@ -1,6 +1,6 @@
 package com.polendina.soai.models
 
-data class Question (
+data class Answer (
     val Markdown: String,
     val Citations: List<Answer>,
     val Confidence: Double,
